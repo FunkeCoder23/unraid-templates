@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>clonehero</Name>
+  <Repository>ghcr.io/funkecoder23/clonehero-server-docker</Repository>
+  <Registry>ghcr.io/funkecoder23/clonehero-server-docker</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/clonehero-game/releases</Project>
+  <ReadMe>https://wiki.clonehero.net/books/guides-and-tutorials/page/online-multiplayer</ReadMe>
+  <Overview>CloneHero is an clone of the popular rhythm game, providing a fun and engaging experience for players.</Overview>
+  <Category>GameServers:</Category>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/funkecoder23/unraid-templates/master/clonehero/clonehero.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/funkecoder23/unraid-templates/master/clonehero/clonehero.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Settings Dir" Target="/data" Default="/mnt/user/appdata/clonehero" Mode="rw" Description="" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/clonehero</Config>
+  <Config Name="SERVER_NAME" Target="SERVER_NAME" Default="CloneHeroServer" Mode="" Description="Server Name" Type="Variable" Display="always-hide" Required="true" Mask="false"></Config>
+  <Config Name="PASSWORD" Target="PASSWORD" Default="" Mode="" Description="Password" Type="Variable" Display="always-hide" Required="false" Mask="true"/>
+  <Config Name="Server IP" Target="HOST" Default="0.0.0.0" Mode="" Description="Host IP, don't change unless you know what you're doing" Type="Variable" Display="advanced-hide" Required="false" Mask="false"></Config>
+  <Config Name="Port" Target="14242" Default="14242" Mode="udp" Description="This is the game port (UDP)" Type="Port" Display="advanced-hide" Required="false" Mask="null">14242</Config>
+  <TailscaleStateDir/>
+</Container>
