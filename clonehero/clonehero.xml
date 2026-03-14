@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://forums.unraid.net/topic/197763-clonehero-server-docker/</Support>
   <Project>https://github.com/clonehero-game/releases</Project>
   <ReadMe>https://wiki.clonehero.net/books/guides-and-tutorials/page/online-multiplayer</ReadMe>
   <Overview>CloneHero is an clone of the popular rhythm game, providing a fun and engaging experience for players.</Overview>
