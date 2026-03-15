@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>hortusfox</Name>
+  <Repository>ghcr.io/danielbrendel/hortusfox-web:latest</Repository>
+  <Registry>ghcr.io/danielbrendel/hortusfox-web/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/danielbrendel/hortusfox-web/issues/new</Support>
+  <Project>https://hortusfox.github.io/</Project>
+  <ReadMe/>
+  <Overview>Self-hosted collaborative plant management system for your local environment</Overview>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/hortusfox-web.xml</TemplateURL>
+  <Icon>https://github.com/danielbrendel/hortusfox-web/raw/main/public/logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>MariaDB</Requires>
+  <Config Name="Web" Target="80" Default="8080" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="App Images" Target="/var/www/html/public/img" Default="/mnt/user/appdata/hortusfox-web/app_images" Mode="rw" Description="" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/hortusfox/app_images</Config>
+  <Config Name="App Logs" Target="/var/www/html/app/logs" Default="/mnt/user/appdata/hortusfox-web/app_logs" Mode="rw" Description="" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/hortusfox/app_logs</Config>
+  <Config Name="Admin Email" Target="APP_ADMIN_EMAIL" Default="admin@example.com" Mode="" Description="" Type="Variable" Display="always-hide" Required="true" Mask="false">.com</Config>
+  <Config Name="Admin Password" Target="APP_ADMIN_PASSWORD" Default="password" Mode="" Description="" Type="Variable" Display="always-hide" Required="true" Mask="true"></Config>
+  <Config Name="MariaDB Host" Target="DB_HOST" Default="db" Mode="" Description="" Type="Variable" Display="always-hide" Required="true" Mask="false">mariadb</Config>
+  <Config Name="MariaDB Port" Target="DB_PORT" Default="3306" Mode="" Description="" Type="Variable" Display="always-hide" Required="true" Mask="false">3306</Config>
+  <Config Name="MariaDB Database" Target="DB_DATABASE" Default="hortusfox" Mode="" Description="" Type="Variable" Display="always-hide" Required="true" Mask="false"></Config>
+  <Config Name="MariaDB Username" Target="DB_USERNAME" Default="root" Mode="" Description="" Type="Variable" Display="always-hide" Required="true" Mask="false"></Config>
+  <Config Name="MariaDB Password" Target="DB_PASSWORD" Default="my-secret-pw" Mode="" Description="" Type="Variable" Display="always-hide" Required="true" Mask="false">Deceit3-Unbitten-Giggle</Config>
+  <Config Name="App Themes" Target="/var/www/html/public/themes" Default="/mnt/user/appdata/hortusfox/themes" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/hortusfox/app_themes</Config>
+  <Config Name="App Backup" Target="/var/www/html/public/backup" Default="/mnt/user/appdata/hortusfox/app_backup" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/hortusfox/app_backup</Config>
+  <Config Name="Migrations" Target="/var/www/html/app/migrations" Default="/mnt/user/appdata/hortusfox/app_migrations" Mode="rw" Description="" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/hortusfox/app_migrations</Config>
+  <Config Name="Timezone" Target="APP_TIMEZONE" Default="UTC" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="Language" Target="APP_LANG" Default="en" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="true" Mask="false">en</Config>
+  <Config Name="MariaDB Charset" Target="DB_CHARSET" Default="utf8mb4" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="true" Mask="false">utf8mb4</Config>
+  <TailscaleStateDir/>
+</Container>
